@@ -1,0 +1,60 @@
+@page {
+  size: Letter;
+  margin: 1.6cm 2cm 2cm 2cm;
+  @bottom-right { content: counter(page) " / " counter(pages); font-size: 8pt; color: #9aa0a6; }
+}
+
+body {
+  font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.55;
+  color: #1d1d1f;
+}
+
+.membrete { margin-bottom: 0.6cm; }
+.membrete .logo { height: 1.5cm; }
+
+.destinatario {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 1.1cm 2.4cm;
+  min-height: 2.6cm;
+}
+.direccion { font-size: 9.5pt; line-height: 1.35; padding-top: 0.2cm; }
+.qr { width: 2.6cm; }
+
+h1 { color: var(--primario); font-size: 11.5pt; font-weight: 600; margin: 0 0 0.25cm; }
+h2 {
+  color: var(--primario);
+  font-size: 11pt;
+  font-weight: 600;
+  margin: 0.55cm 0 0.3cm;
+  page-break-after: avoid;
+}
+h2 .raya { color: var(--acento); margin-right: 0.15cm; }
+
+p { margin: 0 0 0.3cm; }
+strong { font-weight: 700; }
+
+.bloque::after { content: ""; display: block; clear: both; }
+.inicio { break-inside: avoid; }
+
+figure {
+  float: right;
+  width: 7.6cm;
+  margin: 0.05cm 0 0.3cm 0.6cm;
+  page-break-inside: avoid;
+}
+figure img {
+  width: 100%;
+  border: 0.12cm solid #fff;
+  box-shadow: 0 0.04cm 0.18cm rgba(0, 0, 0, 0.25);
+}
+figcaption { font-size: 8pt; color: #5f6368; text-align: center; margin-top: 0.12cm; line-height: 1.3; }
+
+.destacado, .nino { color: var(--primario); font-weight: 700; }
+.programa { color: var(--acento); font-weight: 700; }
+
+.firma { margin-top: 0.9cm; font-size: 9.5pt; line-height: 1.4; page-break-inside: avoid; }
+.firma img { height: 1.5cm; display: block; margin-bottom: 0.2cm; }

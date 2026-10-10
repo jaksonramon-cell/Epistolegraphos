@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --primario: {{ config.color_primario }}; --acento: {{ config.color_acento }}; }
+  {% include "estilo.css" %}
+</style>
+</head>
+<body>
+
+<header class="membrete">
+  {% if logo %}<img class="logo" src="{{ logo }}" alt="{{ config.organizacion }}">{% endif %}
+</header>
+
+<section class="destinatario">
+  <div class="direccion">
+    {{ f.saludo or "Estimado(a)" }}<br>
+    {{ f.padrino }}
+    {% if not f.digital %}<br>{{ f.direccion }}<br>{{ f.ciudad }}{% if f.departamento %}, {{ f.departamento }}{% endif %}{% endif %}
+  </div>
+  {% if qr and not f.digital %}<img class="qr" src="{{ qr }}" alt="QR">{% endif %}
+</section>
+
+{% if carta.titulo %}<h1>{{ carta.titulo }}</h1>{% endif %}
+{% if carta.saludo_inicial %}<p>{{ carta.saludo_inicial }}</p>{% endif %}
+
+{% for b in carta.bloques %}
+  {% set inicio, resto = b.partes() %}
+  <div class="bloque">
+    <div class="inicio">
+      {% if b.titulo %}<h2><span class="raya">—</span> {{ b.titulo }}</h2>{% endif %}
+      {% if b.foto %}
+      <figure>
+        <img src="{{ b.foto.as_uri() }}" alt="">
+        {% if b.pie %}<figcaption>{{ b.pie }}</figcaption>{% endif %}
+      </figure>
+      {% endif %}
+      {{ inicio | safe }}
+    </div>
+    {{ resto | safe }}
+  </div>
+{% endfor %}
+
+<footer class="firma">
+  {% if firma %}<img src="{{ firma }}" alt="Firma">{% endif %}
+  <strong>{{ config.firmante.nombre }}</strong><br>
+  {{ config.firmante.cargo }}<br>
+  {{ config.firmante.direccion }}<br>
+  {% if config.firmante.correo %}Correo: {{ config.firmante.correo }}{% endif %}
+</footer>
+
+</body>
+</html>

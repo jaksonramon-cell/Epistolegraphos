@@ -1,0 +1,1 @@
+Tenemos una noticia muy especial: Joaquín Lisandro terminó su ciclo en el programa. Gracias a tu acompañamiento, hoy estudia, tiene metas claras y su familia puede cuidarlo con autonomía. Nos llena de orgullo ver cuánto ha crecido.

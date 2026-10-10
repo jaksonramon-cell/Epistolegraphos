@@ -1,0 +1,1 @@
+Después de varios años de trabajo conjunto, la familia de Gabriel Antonio alcanzó los objetivos de su plan de desarrollo. Gabriel Antonio se despide del programa con nuevas habilidades y muchos sueños por cumplir.

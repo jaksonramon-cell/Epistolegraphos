@@ -1,0 +1,1 @@
+Tenemos una noticia muy especial: Celeste Amaranta terminó su ciclo en el programa. Gracias a tu acompañamiento, hoy estudia, tiene metas claras y su familia puede cuidarla con autonomía. Nos llena de orgullo ver cuánto ha crecido.

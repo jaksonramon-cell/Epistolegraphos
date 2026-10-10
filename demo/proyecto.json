@@ -1,0 +1,11 @@
+{
+  "organizacion": "Fundación Ceiba Viva",
+  "firmante": {
+    "nombre": "Mariana Ceballos Ortiz",
+    "cargo": "Coordinadora de Experiencia al Donante",
+    "direccion": "Calle Ficticia # 12-34, Bogotá D.C.",
+    "correo": "padrinos@example.org"
+  },
+  "color_primario": "#0b7a75",
+  "color_acento": "#e4572e"
+}

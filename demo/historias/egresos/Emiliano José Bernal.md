@@ -1,0 +1,1 @@
+Queremos contarte que Emiliano José y su familia cumplieron su proceso en el programa. Durante estos años fortalecieron sus vínculos, mejoraron sus ingresos y hoy cuentan con una red de apoyo en su comunidad. Emiliano José está listo para seguir adelante con su familia.

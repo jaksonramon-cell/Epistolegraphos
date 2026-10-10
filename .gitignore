@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# generated letters
+salida/
+
+# Real donor data must never be committed. Only the fictional demo spreadsheets are allowed.
+*.xlsx
+*.xls
+*.csv
+!demo/datos/*.xlsx
+*.exe

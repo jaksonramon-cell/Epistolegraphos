@@ -1,0 +1,1 @@
+Queremos contarte que Renata Isolda y su familia cumplieron su proceso en el programa. Durante estos años fortalecieron sus vínculos, mejoraron sus ingresos y hoy cuentan con una red de apoyo en su comunidad. Renata Isolda está lista para seguir adelante con su familia.
